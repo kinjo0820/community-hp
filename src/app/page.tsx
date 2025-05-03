@@ -1,5 +1,7 @@
 // app/page.tsx
+import { TargetIcon } from "lucide-react";
 import Link from "next/link";
+import TargetSection from "./components/TargetSection";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
 
       {/* 課題の明確化 */}
       <section className="max-w-3xl mx-auto py-12 px-4">
-        <h2 className="text-2xl font-semibold mb-4">大学生が直面するプログラミング学習の課題</h2>
+        <h2 className="text-4xl font-semibold mb-4">大学生が直面するプログラミング学習の課題</h2>
         <ul className="list-disc pl-5 space-y-2">
           <li>独学は挫折しやすく継続が難しい</li>
           <li>実践の機会や学び合いの環境が少ない</li>
@@ -27,17 +29,7 @@ export default function Home() {
       </section>
 
       {/* ターゲット */}
-      <section className="bg-gray-50 py-12 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-semibold mb-4">こんな人におすすめ！</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>プログラミングに不安のある初心者</li>
-            <li>何から始めたらいいかわからない人</li>
-            <li>一緒に学べる仲間がほしい人</li>
-            <li>Webアプリやゲーム、AIを作ってみたい人</li>
-          </ul>
-        </div>
-      </section>
+      <TargetSection />
 
       {/* 差別化ポイント */}
       <section className="max-w-4xl mx-auto py-12 px-4">
